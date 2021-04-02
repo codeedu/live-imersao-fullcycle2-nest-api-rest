@@ -1,0 +1,27 @@
+POST http://localhost:3000/routes
+Content-type: application/json
+
+{
+    "title": "rota"
+    "startPosition": {"lat": 2, "lng": 2},
+    "endPosition": {"lat": 3, "lng": 3}
+}
+
+###
+GET http://localhost:3000/routes
+
+###
+GET http://localhost:3000/routes/6065e03e1bb92301b42950be
+
+###
+PATCH http://localhost:3000/routes/6065e03e1bb92301b42950be
+Content-type: application/json
+
+{
+    "title": "segunda rota111111",
+    "startPosition": {"lat": 20000, "lng": 2},
+    "endPosition": {"lat": 3, "lng": 3}
+}
+
+###
+DELETE http://localhost:3000/routes/6065e03e1bb92301b42950be
